@@ -1,0 +1,43 @@
+gavrasm Gerd's AVR assembler version 4.8 (C)2020 by DG4FAC
+----------------------------------------------------------
+
+Path:        /home/taffarel55/Área de trabalho/AVR Instructions/
+Source file: LDI_instruction.asm
+Hex file:    LDI_instruction.hex
+Eeprom file: LDI_instruction.eep
+Compiled:    20.07.2021, 10:06:51
+Pass:        2
+
+     1: ; LDS Rd, K - load Rd with with Immediate value K
+     2: ;             (16 < d < 31)
+     3: 
+     4: .include "m328pdef.inc" ; Define device ATmega328P
+ -> Warning 009: Include defs not necessary, using internal values!
+   File: /home/taffarel55/Área de trabalho/AVR Instructions/LDI_instruction.asm, Line: 4
+   Source line: .include "m328pdef.inc" ; Define device ATmega328P
+     5: 
+     6: 000000   E100  LDI R16, 16
+     7: 000001   E245  LDI R20, 0X25
+     8: 000002   E8F7  LDI R31, 0X87
+     9: 000003   E799  LDI R25, 0X79
+    10: 
+    11: Loop:
+    12: 000004   CFFF  rjmp loop
+
+List of symbols:
+Type nDef nUsed             Decimalval           Hexval Name
+  T     1     1                    171               AB ATMEGA328P
+  L     1     2                      4               04 LOOP
+  C     1     0                     21               15 NOW_Y
+  C     1     0                      7               07 NOW_M
+  C     1     0                     20               14 NOW_D
+  C     1     0                  44397             AD6D NOW_I
+   No macros.
+
+Program             :        5 words.
+Constants           :        0 words.
+Total program memory:        5 words.
+Eeprom space        :        0 bytes.
+Data segment        :        0 bytes.
+Compilation completed, no errors.
+Compilation ended 20.07.2021, 10:06:51
